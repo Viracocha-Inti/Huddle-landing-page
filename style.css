@@ -90,6 +90,7 @@ h2 {
   display: flex;
   height: 250px;
   align-items: flex-end;
+  position: relative;
 }
 .bottom {
   padding-left: 100px;
@@ -149,9 +150,10 @@ a {
   padding: 40px 70px;
   border: 1px solid rgb(222, 222, 222);
   border-radius: 20px;
-  left: 400px;
-  bottom: -2150px;
-  width: 600px;
+  top: -30%;
+  left: 25%;
+  right: 25%;
+  /* bottom: 20%; */
 }
 
 /* Mid-size screen */
@@ -165,6 +167,7 @@ a {
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
+    padding-right: 0;
   }
   .topmainright img {
     flex: 0 1 auto;
@@ -192,8 +195,10 @@ a {
     margin-bottom: 20px;
   }
   .stuck {
-    left: 200px;
-    bottom: -2650px;
+    text-align: center;
+    top: -35%;
+    left: 18%;
+    right: 18%;
   }
   .bottomLogo {
     justify-content: center;
@@ -233,7 +238,7 @@ a {
   }
 }
 
-/* Mobile  */
+/* Pad */
 @media screen and (max-width: 550px) {
   .topmainright img {
     width: 400px;
@@ -247,10 +252,10 @@ a {
     height: 200px;
   }
   .stuck {
-    left: 50px;
-    bottom: -2350px;
-    width: 400px;
-    text-align: center;
+    top: -40%;
+    left: 10%;
+    right: 10%;
+    margin: 0;
   }
   .bottom {
     padding-left: 0;
@@ -269,5 +274,38 @@ a {
     flex: 0;
     justify-content: flex-start;
     align-items: center;
+  }
+}
+
+/* Mobile  */
+
+@media screen and (max-width: 390px) {
+  .navbar {
+    padding: 25px;
+    height: 80px;
+  }
+  .navbar img,
+  .navbar button {
+    flex: 1 1 auto;
+    display: flex;
+    text-align: center;
+  }
+  .navbar img {
+    padding-right: 10px;
+  }
+  .topmainright img {
+    width: 300px;
+    height: 240px;
+  }
+  .main {
+    padding: 80px 40px;
+  }
+  .stuck {
+    font-size: 12px;
+    padding: 30px 50px;
+  }
+  .stuck button {
+    width: 160px;
+    padding: 10px;
   }
 }

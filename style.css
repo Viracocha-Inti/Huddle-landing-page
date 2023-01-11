@@ -200,21 +200,18 @@ a {
     left: 18%;
     right: 18%;
   }
-  .bottomLogo {
-    justify-content: center;
-    align-items: flex-end;
-    padding-right: 55px;
-  }
   .bottom {
     flex-direction: column;
     align-items: center;
+    padding-left: 0;
   }
   .bottomLogo {
     padding-bottom: 20px;
-    padding-left: 100px;
+    padding-left: 0;
     background-color: hsl(192, 100%, 9%);
     display: flex;
     height: 250px;
+    justify-content: center;
     align-items: flex-end;
   }
   .bottomLeft,
@@ -279,16 +276,26 @@ a {
 
 /* Mobile  */
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 420px) {
   .navbar {
     padding: 25px;
     height: 80px;
   }
-  .navbar img,
-  .navbar button {
+  .navbar img {
     flex: 1 1 auto;
     display: flex;
     text-align: center;
+  }
+  .navbar button {
+    flex: 5 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+  .topmain {
+    padding-top: 0;
   }
   .navbar img {
     padding-right: 10px;
@@ -307,5 +314,10 @@ a {
   .stuck button {
     width: 160px;
     padding: 10px;
+  }
+  .bottomLeft,
+  .bottomLeftMid,
+  .bottomRightMid {
+    text-align: left;
   }
 }

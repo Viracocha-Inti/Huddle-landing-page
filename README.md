@@ -1,16 +1,14 @@
 Frontend Mentor - Huddle landing page with alternating feature blocks solution
 
-Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
 ++ Table of contents
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Continued development](#continued-development)
-- [Author](#author)
+- Overview
+  - Screenshot
+  - Links
+- My process
+
+  - Built with
+  - Continued development
 
 - Overview
 
